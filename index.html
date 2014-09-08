@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.10/js/esri/css/esri.css">
+	<script type="text/javascript">
+	var jsPath = location.pathname.replace(/[^\/]+$/, '');
+	  window.djConfig  = {
+        parseOnLoad: false,
+        async: true,
+        packages : [ {
+            name : "OAuth",
+            location : jsPath + "/js/OAuth"
+        }]
+		}
+	</script>
+
+    <script type="text/javascript" src="http://js.arcgis.com/3.10/"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+require(["dojo/domReady!", "OAuth/PortalSecurity/SecureLoader"], function (domReady,SecureLoader) {
+        new SecureLoader();
+    });
+</script>
+		WEB SITE HERE
+</body>
+</html>
