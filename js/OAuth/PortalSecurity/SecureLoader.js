@@ -47,14 +47,14 @@ define([
                                 if (persistUser) {
                                     this.persistUser();
                                 }
-                                // jimuMain.initApp();
+                                // KICKOFF APP HERE
                                 topic.subscribe('userSignOut', function () {
                                     location.reload();
                                 });
                             }
                         }
                         else {
-                            // jimuMain.initApp();
+                           // KICKOFF APP HERE
                         }
                     }
                 ));
